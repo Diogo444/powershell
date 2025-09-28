@@ -55,12 +55,12 @@ function Install-App {
     )
 
     # Construire la ligne d’arguments
-    $args = @("install","-e","--id",$Id,"--accept-package-agreements","--accept-source-agreements","--silent")
-    if ($Source) { $args += @("--source",$Source) }
-    if ($Override) { $args += @("--override",$Override) }
+    $wingetArgs = @("install","-e","--id",$Id,"--accept-package-agreements","--accept-source-agreements","--silent")
+    if ($Source) { $wingetArgs += @("--source",$Source) }
+    if ($Override) { $wingetArgs += @("--override",$Override) }
 
     # Lancer et récupérer le code retour
-    $proc = Start-Process -FilePath "winget" -ArgumentList $args -Wait -PassThru
+    $proc = Start-Process -FilePath "winget" -ArgumentList $wingetArgs -Wait -PassThru
     return $proc.ExitCode
 }
 
