@@ -18,7 +18,12 @@ $Apps = [ordered]@{
     "Discord"                          = @{ Id = "Discord.Discord"; Source = "winget" }
     "Zoom"                             = @{ Id = "Zoom.Zoom"; Source = "winget" }
     "MAMP"                             = @{ Id = "MAMP.MAMP"; Source = "winget" }
-    "Python 3.x"                       = @{ Id = "Python.Python.3"; Source = "winget" }       # ex: Python.Python.3.12 si tu veux figer
+    "Python 3.x"                       = @{ Id = "Python.Python.3"; Source = "winget" }
+    "WhatsApp"                          = @{ Id = "WhatsApp.WhatsApp"; Source = "winget" }
+    "VLC media player"                 = @{ Id = "VideoLAN.VLC"; Source = "winget" }
+    "Microsoft 365"                 = @{ Id = "Microsoft.Office"; Source = "winget" }       
+    "7-Zip"                            = @{ Id = "9NKSQGP7F2NH"; Source = "msstore" }
+    "WinRar"                           = @{ Id = "WinRAR.WinRAR"; Source = "winget" }
 }
 
 # --- Overrides silencieux par type d’installeur (au cas où Winget n’en met pas assez) ---

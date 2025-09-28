@@ -49,6 +49,11 @@ Applications proposées par défaut :
 - Zoom
 - MAMP
 - Python 3.x
+- WhatsApp
+- VLC media player
+- Microsoft 365
+- 7-Zip
+- WinRar
 
 Fichier principal : `auto-install.ps1`
 
@@ -109,4 +114,3 @@ Quand un `Id` figure dans cette table, le script l’utilise automatiquement pou
 - Table `$InstallerOverrides` : définit les arguments supplémentaires pour certaines installations.
 - Fonction `Install-App` : construit et exécute la commande Winget puis renvoie le code retour.
 - Boucle principale : lit les choix de l’utilisateur, tente l’installation silencieuse puis bascule en interactif si besoin.
-
